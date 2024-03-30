@@ -5,7 +5,7 @@ import { Variants } from "framer-motion";
  * @param delayValue
  * @returns Variants
  */
-export const slideInFromLeft = (delayValue: number): Variants => {
+export const slideInFromLeft = (delayValue: number,durationValue = 0.5): Variants => {
   return {
     hidden: { x: -100, opacity: 0 },
     visible: {
@@ -13,7 +13,7 @@ export const slideInFromLeft = (delayValue: number): Variants => {
       opacity: 1,
       transition: {
         delay: delayValue,
-        duration: 0.5,
+        duration: durationValue,
       },
     },
   };
@@ -24,7 +24,7 @@ export const slideInFromLeft = (delayValue: number): Variants => {
  * @param delayValue
  * @returns Variants
  */
-export const slideInFromRight = (delayValue: number): Variants => {
+export const slideInFromRight = (delayValue: number, durationValue= 0.5): Variants => {
   return {
     hidden: { x: 100, opacity: 0 },
     visible: {
@@ -32,16 +32,17 @@ export const slideInFromRight = (delayValue: number): Variants => {
       opacity: 1,
       transition: {
         delay: delayValue,
-        duration: 0.5,
+        duration: durationValue,
       },
     },
   };
 };
 
 /**
- *
+ * slideInFromTop
+ * @returns Variants
  */
-export const slideInFromTop = ():Variants => {
+export const slideInFromTop = (): Variants => {
   return {
     hidden: { y: -100, opacity: 0 },
     visible: {

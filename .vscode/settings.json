@@ -7,14 +7,4 @@
         "Iconsdark",
         "webm"
     ],
-    "cSpell.ignorePaths": [
-        "**/vscode-extension/**",
-        "**/.git/**",
-        ".vscode",
-        "typings"
-    ],
-    "search.exclude": {
-        "**/node_modules": true,
-        "**/bower_components": true
-    },
 }

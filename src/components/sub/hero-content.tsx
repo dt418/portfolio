@@ -28,11 +28,11 @@ export default function HeroContent() {
         <motion.div
           variants={slideInFromTop()}
           className={cn(
-            "welcome-box py-[15px] px-4 border border-[#7024f88b] opacity-[0.9] gap-2 flex-wrap"
+            "welcome-box py-3 px-4 border border-[#7024f88b] opacity-[0.85] gap-2 flex-wrap"
           )}
         >
           <SparklesIcon className={cn("text-[#b49bff] h-5 w-5")} />
-          <h1 className={cn("welcome-text text-[13px] capitalize flex-wrap")}>
+          <h1 className={cn("welcome-text text-[14px] capitalize flex-wrap")}>
             Fullstack Developer Portfolio
           </h1>
         </motion.div>
@@ -63,11 +63,12 @@ export default function HeroContent() {
           software development. Check out my projects and skills
         </motion.p>
         <motion.a
+          href="/"
           onClick={(e) => {
             e.preventDefault();
-            router.push("/a");
+            router.push("/");
           }}
-          variants={slideInFromLeft(1)}
+          variants={slideInFromLeft(0, 1.3)}
           className={cn(
             "py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] capitalize"
           )}
