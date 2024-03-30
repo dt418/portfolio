@@ -41,6 +41,7 @@ html {
 }
 
 .button-primary {
+  transition: 0.5s;
   background: linear-gradient(
       180deg,
       rgba(60, 8, 126, 0) 0%,
